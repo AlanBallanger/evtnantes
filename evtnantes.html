@@ -179,14 +179,14 @@
 	<ul v-if="layout == 'grid'" class="grid">
 		<!-- A view with big photos and no text -->
 		<li v-for="a in response">
-			<a v-bind:href="a.lieu_siteweb" target="_blank"><img v-bind:src="a.fields.media_1" /></a> 
+			<a v-bind:href="a.fields.lieu_siteweb" target="_blank"><img v-bind:src="a.fields.media_1" /></a> 
 		</li>
 	</ul>
 
 	<ul v-if="layout == 'list'" class="list">
 		<!-- A compact view smaller photos and titles -->
 		<li v-for="a in response">
-			 <a v-bind:href="a.lieu_siteweb" target="_blank"	><img v-bind:src="a.fields.media_1" /></a> 
+			 <a v-bind:href="a.fields.lieu_siteweb" target="_blank"	><img v-bind:src="a.fields.media_1" /></a> 
 			 <p>{{a.fields.nom}}</p>
 			<p>{{a.fields.lieu}}</p>
 			<p>{{a.fields.heure_debut}}</p>
